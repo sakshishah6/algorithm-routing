@@ -1,21 +1,9 @@
-# Routing Algorithms - Group 16
-
-## Group Members
-
-Pratik Solanki, 501058683
-
-Sakshi Shah, 500890327
-
-Lobsang Tenzin, 500893313
-
-Vincent Huynh, 500902518
-
-Karan Heir, 501048458
+# Algorithm Routing Animator
 
 
 ## Description
 
-This is an educational tool that helps students in the Computer Networks course understand routing algorithms. It implements two types of routing algorithms, centralized and decentralized, and allows users to modify input parameters. The tool provides a user-friendly interface with enhanced visualization capabilities to aid students in their learning. Specifically, the tool implements Dijkstra's algorithm as a centralized routing algorithm and Bellman-Ford algorithm as a decentralized routing algorithm.
+This is an educational tool that helps students in the Computer Networks course understand routing algorithms. It implements two types of routing algorithms, centralized and decentralized, and allows users to modify input parameters. The tool provides a user-friendly interface with enhanced visualization capabilities to aid students in their learning. Specifically, the tool implements Dijkstra's algorithm as a centralized routing algorithm and the Bellman-Ford algorithm as a decentralized routing algorithm.
 
 ## Installation
 
