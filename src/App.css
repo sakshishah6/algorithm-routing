@@ -1,0 +1,342 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: rgb(35, 36, 39);
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+/* Title */
+.title {
+  z-index: 10;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  margin: 1px;
+  display: flex;
+  flex-direction: column;
+  padding: 1px;
+  text-align: left;
+}
+
+.title h2 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.title h4 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.data-controls {
+  top: 90px;
+  left: 15px;
+  z-index: 40;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+}
+
+.data-controls button {
+  margin-right: 8px;
+}
+
+.data-controls input {
+  margin-right: 8px;
+}
+
+/* Algorithm Selector */
+.algorithm-selector {
+  z-index: 50;
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  padding: 1px;
+  align-items: flex-end;
+}
+
+.algorithm-selector .algorithm-select-container {
+  margin: 0.25rem;
+  display: flex;
+  align-items: right;
+}
+
+.algorithm-selector .algorithm-select-container h3 {
+  margin: 0.25rem;
+  text-align: right;
+}
+
+.algorithm-selector .algorithm-select-container h3::before {
+  content: "* ";
+  color: red;
+}
+
+.algorithm-selector .algorithm-select-container .algorithm-select {
+  z-index: 70;
+}
+
+.algorithm-selector .source-select-container {
+  margin: 0.25rem;
+  display: flex;
+  padding: 1px;
+  align-items: right;
+}
+
+.algorithm-selector .source-select-container h3 {
+  margin: 0.25rem;
+  text-align: right;
+}
+
+.algorithm-selector .source-select-container h3::before {
+  content: "* ";
+  color: red;
+}
+
+.algorithm-selector .source-select-container .algorithm-select {
+  z-index: 65;
+}
+
+.algorithm-selector .dest-select-container {
+  margin: 0.25rem;
+  display: flex;
+  padding: 1px;
+  align-items: center;
+}
+
+.algorithm-selector .dest-select-container h3 {
+  margin: 0.25rem;
+  text-align: right;
+}
+
+.algorithm-selector .dest-select-container .algorithm-select {
+  z-index: 60;
+}
+
+.algorithm-select {
+  padding-left: 10px;
+  width: 250px;
+}
+
+.algorithm-selector button {
+  margin: 0.25rem;
+  margin-top: 0.5rem;
+  display: flex;
+  height: fit-content;
+  width: fit-content;
+  color: #fff;
+  background: #5bc980;
+}
+
+.debug-btn {
+  z-index: 40;
+  position: absolute;
+  bottom: 125px;
+  right: 15px;
+  margin: 0.25rem;
+}
+
+/* Edge Edits */
+.edge-edits {
+  z-index: 31;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.edge-edits .edge-select-container {
+  margin: 0.25rem;
+}
+
+.edge-edits .select {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.edge-edits button {
+  margin: 0.25rem;
+  background-color: #2278c8;
+  color: white;
+}
+
+/* Node Edits */
+.node-edits {
+  z-index: 30;
+  position: absolute;
+  bottom: 70px;
+  right: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.node-edits .node-select-container {
+  margin: 0.25rem;
+}
+
+.node-edits .select {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.node-edits button {
+  margin: 0.25rem;
+  background-color: #2278c8;
+  color: white;
+}
+
+.zoom-controls {
+  z-index: 10;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  padding: 1px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+
+.zoom-controls button {
+  display: block;
+  width: 100%;
+  color: #fff;
+  background: #2fa89d;
+  margin-right: 8px;
+}
+
+.error-msg {
+  font-size: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: left;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1.5px;
+  color: white;
+  background-color: #ca482e;
+  justify-content: center;
+  width: 150px;
+}
+
+.path-table-container {
+  left: 15px;
+  top:30%;
+  z-index: 100;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+}
+
+.path {
+  font-size: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: left;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1.5px;
+  color: white;
+  background-color: #ca482e;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  overflow-y: scroll;
+  height: 350px;
+  width: 325px;
+  display: block;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+table tr:hover {
+  background-color: #f5ac9d;
+}
+
+table th {
+  text-align: center;
+  background-color: #ca482e;
+  font-weight: 100;
+  color: white;
+}
+
+table caption {
+  text-align: left;
+  padding-bottom: 5px;
+  color: #ca482e;
+}
+
+#file-import {
+  display: none;
+}
+
+.data-controls button {
+  margin: 0.25rem;
+  background-color: #353535;
+  color: white;
+}
